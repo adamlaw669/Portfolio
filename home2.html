@@ -2,18 +2,24 @@
 <html>
     <style>
         body{
-            color: rgb(102, 100, 100);
+            color: rgb(22, 22, 22);
         }
         footer{
             position: fixed;
+            left: 0;
             bottom: 0px;
+            width: 100%;
             text-align: center;
-            border-radius: 25px;
         }
         figure{
             text-align: center;
-            width: 150px;
-            height: auto;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+            
         }
         .sidenav{
             height: 100%;
@@ -50,6 +56,10 @@
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
         }
+        #resize{
+            max-width:5%;
+            max-height:15%;
+        }
     </style>
     <script>
         function openNav() {
@@ -83,6 +93,10 @@
           </div>
     </body>
     <footer>
+        <img src="images/instagram.png" alt="Instagram icon" id="resize">
+        <img src="images/twitter.png" alt="Twitter icon" id="resize">
+        <img src="images/linkedin.png" alt="LinkedIn icon" id="resize">
+        <img src="images/youtube.png" alt="YouTube icon" id="resize">
         <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 </html>
